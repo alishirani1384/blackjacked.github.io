@@ -1,4 +1,3 @@
-
 let Cards=[]
 let sum=0
 let blackJack=false
