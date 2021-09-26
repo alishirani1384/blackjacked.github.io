@@ -7,6 +7,13 @@ let massege=""
 let message=document.getElementById("message")
 let sumEl=document.getElementById("sum")
 let cardsel=document.getElementById("cardel")
+let player={
+    name:"Per",
+    chips:145
+}
+
+let playerel=document.getElementById("player")
+playerel.textContent=player.name+": $"+player.chips
 
 
 function randomcard(){
@@ -51,11 +58,12 @@ sumEl.textContent="Sum: "+sum
 
 }
 function newcard() {
+    if(isAlive===true && blackJack===false){
     console.log("drawing a new card");
     let thirdCard=randomcard()
     Cards.push(thirdCard)
     console.log(Cards);
     sum+=thirdCard
     renderGame()
-    
+  }
 }
