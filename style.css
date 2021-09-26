@@ -39,3 +39,10 @@ button{
 #hello_howareyou{
     color: white;
 }
+@media screen and (max-width:400px) {
+    .container{
+        width: 350px;
+        height: 460px;
+    }
+    
+}
